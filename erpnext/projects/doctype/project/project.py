@@ -42,6 +42,7 @@ class Project(Document):
 		daily_time_to_send: DF.Time | None
 		day_to_send: DF.Literal["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
 		department: DF.Link | None
+		describe: DF.TextEditor | None
 		estimated_costing: DF.Currency
 		expected_end_date: DF.Date | None
 		expected_start_date: DF.Date | None
