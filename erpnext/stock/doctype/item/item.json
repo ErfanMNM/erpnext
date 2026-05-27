@@ -14,6 +14,7 @@
   "naming_series",
   "item_code",
   "item_name",
+  "item_sub_name",
   "item_group",
   "stock_uom",
   "column_break0",
@@ -178,10 +179,14 @@
    "bold": 1,
    "fieldname": "item_name",
    "fieldtype": "Data",
+   "in_filter": 1,
    "in_global_search": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
    "label": "Item Name",
    "oldfieldname": "item_name",
    "oldfieldtype": "Data",
+   "reqd": 1,
    "search_index": 1
   },
   {
@@ -1070,6 +1075,15 @@
   {
    "fieldname": "column_break_kpmi",
    "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "item_sub_name",
+   "fieldtype": "Data",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Item Sub Name"
   }
  ],
  "icon": "fa fa-tag",
@@ -1077,7 +1091,7 @@
  "image_field": "image",
  "links": [],
  "make_attachments_public": 1,
- "modified": "2026-04-28 17:31:47.613279",
+ "modified": "2026-05-23 00:52:02.453220",
  "modified_by": "Administrator",
  "module": "Stock",
  "name": "Item",
