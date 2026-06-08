@@ -1,5 +1,6 @@
 {
  "actions": [],
+ "allow_bulk_edit": 1,
  "allow_import": 1,
  "autoname": "TASK-.YYYY.-.#####",
  "creation": "2013-01-29 19:25:50",
@@ -8,6 +9,7 @@
  "engine": "InnoDB",
  "field_order": [
   "subject",
+  "sub_info",
   "project",
   "issue",
   "type",
@@ -121,7 +123,7 @@
    "no_copy": 1,
    "oldfieldname": "status",
    "oldfieldtype": "Select",
-   "options": "Open\nWorking\nPending Review\nOverdue\nTemplate\nCompleted\nCancelled"
+   "options": "Open\nWorking\nPending\nPending Review\nOverdue\nTemplate\nCompleted\nCancelled"
   },
   {
    "fieldname": "priority",
@@ -220,6 +222,7 @@
   {
    "fieldname": "description",
    "fieldtype": "Text Editor",
+   "in_filter": 1,
    "in_list_view": 1,
    "in_preview": 1,
    "in_standard_filter": 1,
@@ -427,6 +430,16 @@
   {
    "fieldname": "column_break_vvfp",
    "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sub_info",
+   "fieldtype": "Data",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Sub Info",
+   "search_index": 1
   }
  ],
  "icon": "fa fa-check",
@@ -434,7 +447,7 @@
  "is_tree": 1,
  "links": [],
  "max_attachments": 5,
- "modified": "2026-05-07 16:49:18.354987",
+ "modified": "2026-06-04 16:21:04.528818",
  "modified_by": "Administrator",
  "module": "Projects",
  "name": "Task",
