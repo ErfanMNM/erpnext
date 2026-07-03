@@ -114,7 +114,6 @@ class Item(Document):
 		item_defaults: DF.Table[ItemDefault]
 		item_group: DF.Link
 		item_name: DF.Data
-		item_sub_name: DF.Data | None
 		last_purchase_rate: DF.Float
 		lead_time_days: DF.Int
 		max_discount: DF.Float
@@ -139,6 +138,7 @@ class Item(Document):
 		shelf_life_in_days: DF.Int
 		standard_rate: DF.Currency
 		stock_uom: DF.Link
+		sub_name: DF.Data
 		supplier_items: DF.Table[ItemSupplier]
 		taxes: DF.Table[ItemTax]
 		total_projected_qty: DF.Float

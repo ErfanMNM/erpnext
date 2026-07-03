@@ -29,6 +29,7 @@ class Project(Document):
 		from frappe.types import DF
 		from tantien_custom.tantien_custom.doctype.project_attachment.project_attachment import ProjectAttachment
 		from tantien_custom.tantien_custom.doctype.project_links.project_links import ProjectLinks
+		from tantien_custom.tantien_custom.doctype.report_of_the_day.report_of_the_day import ReportOfTheDay
 
 		actual_end_date: DF.Date | None
 		actual_start_date: DF.Date | None
@@ -64,6 +65,7 @@ class Project(Document):
 		project_name: DF.Data
 		project_template: DF.Link | None
 		project_type: DF.Link | None
+		report: DF.Table[ReportOfTheDay]
 		sales_order: DF.Link | None
 		second_email: DF.Time | None
 		status: DF.Literal["Open", "Completed", "Cancelled"]

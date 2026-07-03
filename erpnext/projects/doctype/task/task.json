@@ -433,13 +433,12 @@
   },
   {
    "fieldname": "sub_info",
-   "fieldtype": "Data",
+   "fieldtype": "Small Text",
    "in_filter": 1,
    "in_list_view": 1,
    "in_preview": 1,
    "in_standard_filter": 1,
-   "label": "Sub Info",
-   "search_index": 1
+   "label": "Sub Info"
   }
  ],
  "icon": "fa fa-check",
@@ -447,7 +446,7 @@
  "is_tree": 1,
  "links": [],
  "max_attachments": 5,
- "modified": "2026-06-04 16:21:04.528818",
+ "modified": "2026-06-23 14:04:50.144897",
  "modified_by": "Administrator",
  "module": "Projects",
  "name": "Task",

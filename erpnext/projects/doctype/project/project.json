@@ -1,5 +1,6 @@
 {
  "actions": [],
+ "allow_bulk_edit": 1,
  "allow_import": 1,
  "allow_rename": 1,
  "autoname": "naming_series:",
@@ -28,6 +29,8 @@
   "actual_end_date",
   "ffdfff",
   "describe",
+  "report_tab",
+  "report",
   "costing_tab",
   "project_details",
   "estimated_costing",
@@ -528,6 +531,17 @@
    "fieldname": "describe",
    "fieldtype": "Text Editor",
    "label": "M\u00f4 t\u1ea3 d\u1ef1 \u00e1n"
+  },
+  {
+   "fieldname": "report_tab",
+   "fieldtype": "Tab Break",
+   "label": "Report"
+  },
+  {
+   "fieldname": "report",
+   "fieldtype": "Table",
+   "label": "Report",
+   "options": "Report Of The Day"
   }
  ],
  "icon": "fa fa-puzzle-piece",
@@ -535,7 +549,7 @@
  "index_web_pages_for_search": 1,
  "links": [],
  "max_attachments": 4,
- "modified": "2026-05-22 16:45:50.762759",
+ "modified": "2026-06-23 14:21:24.278153",
  "modified_by": "Administrator",
  "module": "Projects",
  "name": "Project",
